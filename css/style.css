@@ -3,6 +3,7 @@ body {
   padding: 0;
   margin: 0;
   font-size: 20px;
+  
 }
 
 p {
@@ -56,6 +57,9 @@ div.small-container {
 footer {
   background:#1f2126;
   color: #ffffff;
+}
+.footer-main{
+   background-color:#1f2126; 
 }
 
 section.hero {
