@@ -9,6 +9,7 @@ var articles = database.ref('articles');
 articles.on('value', function(ss){
     //Codigo  devuelve el valor de lo que busca
     var article = ss.val()
+    console.log(article);
     document.getElementById("autor").innerHTML = article.id.autor;
     document.getElementById("titulo").innerHTML = article.id.titulo;
     document.getElementById("link").innerHTML = article.id.link;
