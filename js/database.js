@@ -7,7 +7,7 @@ var articles = database.ref('articles');
 
 //Accder a los datos internos
 articles.on('value', function(ss){
-    //Codigo 
+    //Codigo  devuelve el valor de lo que busca
     var article = ss.val()
-    console.log(article);
+    document.getElementById("autor").innerHTML = article.id.autor;
 });
