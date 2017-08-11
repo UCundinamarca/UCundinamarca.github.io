@@ -3,7 +3,7 @@
 var database = firebase.database();
 
 //Accedo a un documento
-var articles = database.ref('articles');
+var articles = database.ref('Articles');
 
 //Accder a los datos internos
 articles.on('value', function(ss){
