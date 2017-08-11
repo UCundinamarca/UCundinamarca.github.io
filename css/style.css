@@ -53,7 +53,9 @@ div.container {
 }
 
 div.small-container {
-  max-width: 700px;
+    max-width: 700px;
+    background-color: rgba(255,255,255,0.2);
+    border-radius: 10px;
 }
 footer {
   background:#1f2126;
