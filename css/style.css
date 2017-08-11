@@ -54,10 +54,8 @@ div.container {
 div.small-container {
   max-width: 700px;
 }
-
-header,
 footer {
-  background: #1D1D1D;
+  background:#1f2126;
   color: #ffffff;
 }
 
