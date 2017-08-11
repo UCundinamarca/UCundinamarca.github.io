@@ -11,4 +11,5 @@ articles.on('value', function(ss){
     var article = ss.val()
     document.getElementById("autor").innerHTML = article.id.autor;
     document.getElementById("titulo").innerHTML = article.id.titulo;
+    document.getElementById("link").innerHTML = article.id.link;
 });
