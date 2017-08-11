@@ -69,14 +69,16 @@ section.hero {
   color: #0e3d38;
   background-image: url('../images/documents.jpeg');
   background-size: cover;
-  height:100vh;
+  height:93vh;
 }
 
 p.post-hero {
   width: 80%;
   margin: 0 auto;
 }
-
+header{
+    height:7vh;
+}
 header a,
 section.hero a,
 footer a {
