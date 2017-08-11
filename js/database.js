@@ -10,4 +10,5 @@ articles.on('value', function(ss){
     //Codigo  devuelve el valor de lo que busca
     var article = ss.val()
     document.getElementById("autor").innerHTML = article.id.autor;
+    document.getElementById("titulo").innerHTML = article.id.titulo;
 });
