@@ -69,6 +69,7 @@ section.hero {
   color: #0e3d38;
   background-image: url('../images/documents.jpeg');
   background-size: cover;
+  height:100vh;
 }
 
 p.post-hero {
