@@ -34,15 +34,3 @@ function mensajeFeedback(msg) {
     elem.style.display = 'none'
   }, 5000);
 }
-
-getId('up').addEventListener('click', function() {
-  getId('up').style.display = 'none';
-  getId('down').style.display = 'block';
-  getId('cuerpoencuesta').style.display = 'none';
-});
-
-getId('down').addEventListener('click', function() {
-  getId('up').style.display = 'block';
-  getId('down').style.display = 'none';
-  getId('cuerpoencuesta').style.display = 'block';
-});
