@@ -11,7 +11,7 @@ articles.on('value', function(ss){
     getId("link").innerHTML = article.link;
     getId("fecha").innerHTML = article.fechaLanzado;
 });
-var refRespuestas = database.ref().child('respuestas');
+var refRespuestas = database.ref().child('articles').child('respuestas');
 refRespuestas.on('child_added', function(ss) {
     var respuesta = ss.val();
     console.log(respuesta);
