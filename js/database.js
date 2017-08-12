@@ -19,9 +19,13 @@ articles.on('value', function(ss){
 //acceso a una colección
 var refRespuestas = database.ref('respuestas');
 refRespuestas.on('child_added', function(ss) {
-    var respuesta = ss.val();
+    var respuesta = ss.val()
     console.log(respuesta);
     var item = document.createElement('li');
     item.innerHTML = '<input name="respuesta" type="radio" value="' + respuesta.valor + '"> ' + respuesta.respuesta;
     getId('lista').appendChild(item);
 });
+//var commentsRef = firebase.database().ref('post-comments/' + postId);
+//commentsRef.on('child_added', function(data) {
+//  addCommentElement(postElement, data.key, data.val().text, data.val().author);
+//});
