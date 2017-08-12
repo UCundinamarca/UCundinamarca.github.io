@@ -23,7 +23,7 @@ refRespuestas.on('child_added', function(data) {
     console.log(respuesta);
     var item = document.createElement('li');
     item.innerHTML = '<input name="respuesta" type="radio" value="' + respuesta.valor + '"> ' + respuesta.respuesta;
-    getId('lista').appendChild(item);
+    getId("lista").appendChild(item);
 });
 //var commentsRef = firebase.database().ref('post-comments/' + postId);
 //commentsRef.on('child_added', function(data) {
