@@ -24,7 +24,7 @@ refRespuestas.on('child_added', function(ss) {
    getId('lista').appendChild(item);
 });
 
-var ref = new Firebase("https://juegosdemesa.firebaseio.com/juegos/");
+var ref = database.ref('juegos');
 ref.on("child_added", function(snapshot){
 	console.log("El juego actual es ", snapshot.val());
 	console.log("El id actual es ", snapshot.key());
