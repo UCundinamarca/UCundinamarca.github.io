@@ -85,7 +85,9 @@ html {
 article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, section {
   display: block;
 }
-
+.footer-main{
+    background-color:#1f2126;
+}
 body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
