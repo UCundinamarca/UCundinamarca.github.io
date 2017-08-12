@@ -16,5 +16,5 @@ refRespuestas.on('child_added', function(ss) {
     var respuesta = ss.val();
     var item = document.createElement('li');
     item.innerHTML = '<input name="respuesta" type="radio" value="' + respuesta.valor + '"> ' + respuesta.respuesta;
-    getId('lista').appendChild(item);
+    getId("lista").appendChild(item);
 });
