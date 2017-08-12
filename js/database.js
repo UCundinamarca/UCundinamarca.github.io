@@ -13,4 +13,5 @@ articles.on('value', function(ss){
     getId("autor").innerHTML = article.id.autor;
     getId("titulo").innerHTML = article.id.titulo;
     getId("link").innerHTML = article.id.link;
+    getId("fecha").innerHTML = article.id.fechaLanzado;
 });
