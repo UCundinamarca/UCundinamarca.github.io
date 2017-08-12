@@ -8,6 +8,7 @@ getId("login").addEventListener('click', function(){
         .then( function (result) {
             var user = result.user;
             console.log("El usuario es ", user);
+            mensajeFeedBack('Autenticado correctamente: ' + user.displayName);
         })
         .catch(function (err) {
             console.log("Hubo un error" + err);
