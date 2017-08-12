@@ -7,6 +7,7 @@ var database = firebase.database();
 var ref = database.ref('encuesta');
 ref.on('value', function(ss) {
   var encuesta = ss.val();
+  console.log(encuesta);
   getId('preg').innerHTML = encuesta.pregunta;
   getId('desc').innerHTML = encuesta.descripcion;
 });
