@@ -2,10 +2,13 @@
 
 var database = firebase.database();
 
+var articles = database.ref('articles');
 
-
-var ref = database.ref('juegos');
-ref.on("child_added", function(snapshot){
-	console.log("El juego actual es ", snapshot.val());
-	console.log("El id actual es ", snapshot.key());
+articles.on('value', function(ss){
+    var article = ss.val();
+    getId("autor").innerHTML = article.id.autor;
+    getId("titulo").innerHTML = article.id.titulo;
+    getId("link").innerHTML = article.id.link;
+    getId("fecha").innerHTML = article.id.fechaLanzado;
 });
+
