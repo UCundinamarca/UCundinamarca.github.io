@@ -2,7 +2,7 @@
 var auth = firebase.auth();
 
 //Login de usuarios
-getid("login").addEventListener('click', function(){
+getId("login").addEventListener('click', function(){
     var provider = new firebase.auth.GoogleAuthProvider();
     auth.signInWithPopup(provider)
         .then( function (result) {
