@@ -17,12 +17,12 @@ articles.on('value', function(ss){
 
 //Agregar elementos al HTML y llenarlos, agregar hijos de la tabla con child_added
 //acceso a una colección
-var refRespuestas = database.ref("respuestas/");
+var refRespuestas = database.ref("ask");
 
-refRespuestas.on("child_added", function(data, prevChildKey) {
-    var respuesta = data.val();
+refRespuestas.on("child_added", function(ss) {
+    var respuesta = ss.val();
     console.log("valor: " + respuesta.valor);
-    console.log("respuesta: " + respuesta.respuesta) ;
+    console.log("respuesta: " + respuesta.respuesta);
 });
 //var commentsRef = firebase.database().ref('post-comments/' + postId);
 //commentsRef.on('child_added', function(data) {
