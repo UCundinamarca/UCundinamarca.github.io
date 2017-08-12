@@ -16,12 +16,16 @@ articles.on('value', function(ss){
     getId("fecha").innerHTML = article.id.fechaLanzado;
 });
 
-//Agregar elementos al HTML y llenarlos, agregar hijos de la tabla con child_added
-
 var refRespuestas = database.ref('ask');
 refRespuestas.on('child_added', function(ss) {
    var respuesta = ss.val();
    var item = document.createElement('li');
    item.innerHTML = '<input name="respuesta" type="radio" value="' + respuesta.valor + '"> ' + respuesta.respuesta;
    getId('lista').appendChild(item);
+});
+
+var ref = new Firebase("https://juegosdemesa.firebaseio.com/juegos/");
+ref.on("child_added", function(snapshot){
+	console.log("El juego actual es ", snapshot.val());
+	console.log("El id actual es ", snapshot.key());
 });
