@@ -15,6 +15,9 @@
   a:visited {
     text-decoration: underline;
   }
+  .navbar-links{
+      color:#28a745;
+  }
   abbr[title]::after {
     content: " (" attr(title) ")";
   }
