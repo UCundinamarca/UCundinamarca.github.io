@@ -94,6 +94,10 @@ article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, s
     height:100vh;
     width:100vw;
 }
+.small-container{
+    margin: 0 auto;
+  padding: 0 20px;
+}
 body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
