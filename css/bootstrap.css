@@ -3569,7 +3569,7 @@ tbody.collapse.show {
 }
 
 .navbar-light .navbar-brand {
-  color: rgba(0, 0, 0, 0.9);
+  color: #0e3d38;
 }
 
 .navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover {
@@ -5279,7 +5279,7 @@ a.bg-danger:focus, a.bg-danger:hover {
 }
 
 .bg-light {
-  background-color: #f8f9fa !important;
+  background-color: #d5ca3d !important;
 }
 
 a.bg-light:focus, a.bg-light:hover {
