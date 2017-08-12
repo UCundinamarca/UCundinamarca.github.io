@@ -9,15 +9,12 @@ var articles = database.ref('articles');
 articles.on('value', function(ss){
     //Codigo  devuelve el valor de lo que busca
     var article = ss.val();
-    console.log(article);
     getId("autor").innerHTML = article.id.autor;
     getId("titulo").innerHTML = article.id.titulo;
     getId("link").innerHTML = article.id.link;
     getId("fecha").innerHTML = article.id.fechaLanzado;
 });
 
-//Agregar elementos al HTML y llenarlos, agregar hijos de la tabla con child_added
-//acceso a una colección
 var refRespuestas = database.ref("ask");
 
 refRespuestas.on("child_added", function(ss) {
