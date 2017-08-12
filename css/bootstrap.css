@@ -100,7 +100,8 @@ article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, s
     margin: 0 auto;
     padding: 0 20px;
     color: snow;
-    background-color:rgba(0,0,0,0.1);
+    background-color:rgba(0,0,0,0.2);
+    border-radius:10px;
 }
 body {
   margin: 0;
