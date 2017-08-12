@@ -3,17 +3,12 @@
 var database = firebase.database();
 
 //Accedo a un documento
-var articles = database.ref('articles');
-
-//Accder a los datos internos de a uno con value
-articles.on('value', function(ss){
-    //Codigo  devuelve el valor de lo que busca
-    var article = ss.val();
-    console.log(article);
-    getId("autor").innerHTML = article.id.autor;
-    getId("titulo").innerHTML = article.id.titulo;
-    getId("link").innerHTML = article.id.link;
-    getId("fecha").innerHTML = article.id.fechaLanzado;
+//Acceso a un documento
+var ref = database.ref('encuesta');
+ref.on('value', function(ss) {
+  var encuesta = ss.val();
+  getId('preg').innerHTML = encuesta.pregunta;
+  getId('desc').innerHTML = encuesta.descripcion;
 });
 
 //Agregar elementos al HTML y llenarlos, agregar hijos de la tabla con child_added
