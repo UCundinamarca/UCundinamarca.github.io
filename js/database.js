@@ -8,7 +8,7 @@ var articles = database.ref('articles');
 //Accder a los datos internos de a uno con value
 articles.on('value', function(ss){
     //Codigo  devuelve el valor de lo que busca
-    var article = ss.val()
+    var article = ss.val();
     console.log(article);
     getId("autor").innerHTML = article.id.autor;
     getId("titulo").innerHTML = article.id.titulo;
@@ -16,12 +16,15 @@ articles.on('value', function(ss){
     getId("fecha").innerHTML = article.id.fechaLanzado;
 });
 
-//Agregar elementos al HTML y llenarlos, agregar hijos de la tabla
+//Agregar elementos al HTML y llenarlos, agregar hijos de la tabla con child_added
 
-var addToTable = database.ref('respuestas');
-addToTable.on('child_added', function(ss){
-    var respuesta = ss.val(); //Cada hijo de manera individual
-    var item = document.createElement['li'];
-    item.innerHTML = '<input name="respuesta" type="radio" value="' + respuesta.valor + '">' + respuesta.respuesta ;
-    getId("lista").appendChild(item);
+var refRespuestas = database.ref('respuestas');
+refRespuestas.on('child_added',function(ss){
+    //Valor de respuesta de a hijo por hijo
+    var respuesta = ss.val();
+    console.log(respuesta);
+    //introduciendo el resultado en el html
+    var item = document.createElement('li');
+    item.innerHTML = '<input name="respuesta" type="radio" value="' + respuesta.valor + '">' + respuesta.respuesta;
+    getId('lista').appendChild(item);
 });
