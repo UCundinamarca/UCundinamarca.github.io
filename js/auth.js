@@ -4,7 +4,7 @@ var auth = firebase.auth();
 //Login de usuarios
 getid("login").addEventListener('click', function(){
     var provider = new firebase.auth.GoogleAuthProvider();
-    auth.signInWithPopup(provider);
+    auth.signInWithPopup(provider)
         .then( function (result) {
             var user = result.user;
             console.log("El usuario es ", user);
