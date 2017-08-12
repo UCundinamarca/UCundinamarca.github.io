@@ -18,12 +18,11 @@ articles.on('value', function(ss){
 //Agregar elementos al HTML y llenarlos, agregar hijos de la tabla con child_added
 //acceso a una colección
 var refRespuestas = database.ref("respuestas/");
+
 refRespuestas.on("child_added", function(data, prevChildKey) {
     var respuesta = data.val();
-    console.log(respuesta);
-    var item = document.createElement('li');
-    item.innerHTML = '<input name="respuesta" type="radio" value="' + respuesta.valor + '"> ' + respuesta.respuesta;
-    getId("lista").appendChild(item);
+    console.log("valor: " + respuesta.valor);
+    console.log("respuesta: " + respuesta.respuesta) ;
 });
 //var commentsRef = firebase.database().ref('post-comments/' + postId);
 //commentsRef.on('child_added', function(data) {
