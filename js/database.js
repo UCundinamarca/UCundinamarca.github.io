@@ -6,9 +6,9 @@ var articles = database.ref('articles');
 
 articles.on('value', function(ss){
     var article = ss.val();
-    getId("autor").innerHTML = article.id.autor;
-    getId("titulo").innerHTML = article.id.titulo;
-    getId("link").innerHTML = article.id.link;
-    getId("fecha").innerHTML = article.id.fechaLanzado;
+    getId("autor").innerHTML = article.id.autor();
+    getId("titulo").innerHTML = article.id.titulo();
+    getId("link").innerHTML = article.id.link();
+    getId("fecha").innerHTML = article.id.fechaLanzado();
 });
 
