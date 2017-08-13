@@ -97,8 +97,7 @@ article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, s
     
 }
 .small-container{
-    margin: 0 auto;
-    padding: 0 20px;
+    text-align:center;
     color: snow;
     background-color:rgba(0,0,0,0.2);
     border-radius:10px;
