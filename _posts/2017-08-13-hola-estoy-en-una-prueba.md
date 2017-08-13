@@ -8,6 +8,8 @@ excerpt: Bears
 
 &nbsp;
 
-## ![](/uploads/versions/1380439-637627466280279-273985651-n---x----258-225x---.jpg)The Bear
+## ![](/uploads/versions/1380439-637627466280279-273985651-n---x----258-225x---.jpg)
+
+## The Bear
 
 The bear is awesome!!!
