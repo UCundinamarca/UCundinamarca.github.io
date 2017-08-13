@@ -25,9 +25,10 @@ function writeDB(){
     var article = ss.val();
     var s = getId("titulo");
     s.value = "new value";
+    console.log(s.value);
+    console.log(article.titulo);
     if(article.titulo.toLowerCase() = s.value.toLowerCase()){
         console.log("YA Existe esta entrada");
     }
     });
 };
-writeDB();
