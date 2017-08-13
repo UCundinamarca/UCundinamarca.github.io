@@ -1,0 +1,65 @@
+---
+layout: default
+title: Añade articulos
+---
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-right">
+            <br/>
+            <button class="text-center btn btn-outline-success btn-xs" id="login"><i class="fa fa-user-circle-o" aria-hidden="true"></i> Ingresa</button>
+            <br/>
+            <small class="text-muted">Profesores y directivos.</small>
+        </div>
+    </div>
+        <div class="form-group row">
+          <label for="example-text-input" class="col-2 col-form-label">Titulo</label>
+          <div class="col-10">
+            <input class="form-control" type="text" value="" id="articuloTitulo">
+          </div>
+        </div>
+    <br/>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <table class="table table-responsive table-striped table-hover" id="tablaArticulos">
+                <thead class="thead-inverse">
+                    <tr>
+                        <th>
+                            Autor
+                        </th>
+                        <th>
+                            Titulo
+                        </th>
+                        <th>
+                            Link
+                        </th>
+                         <th>
+                            Fecha
+                        </th>
+                    </tr>
+                </thead>
+                <tbody id="tbody">
+                    <tr>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyC2yfRe_vv4mmbChqZFBSzbSIygXfbdFs0",
+    authDomain: "testu-3c7bf.firebaseapp.com",
+    databaseURL: "https://testu-3c7bf.firebaseio.com",
+    projectId: "testu-3c7bf",
+    storageBucket: "",
+    messagingSenderId: "982465018688"
+  };
+  firebase.initializeApp(config);
+</script>
+<script src="/js/functions.js"></script>
+<script src="/js/auth.js"></script>
+<script src="/js/database.js"></script>
