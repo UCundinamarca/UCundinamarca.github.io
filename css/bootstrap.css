@@ -101,6 +101,9 @@ article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, s
     background-color:rgba(0,0,0,0.2);
     border-radius:10px;
 }
+.img-border{
+    border-radius:10px;
+}
 body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
