@@ -8,7 +8,7 @@ articles.on('value', function(ss){
     var article = ss.val();
     getId("autor").innerHTML = article.autor;
     getId("titulo").innerHTML = article.titulo;
-    getId("link").innerHTML = article.link;
+    getId("link").innerHTML = '<a href="' + article.link + '"><i class="fa fa-external-link" aria-hidden="true"></i></a> ';
     getId("fecha").innerHTML = article.fechaLanzado;
 });
 var refRespuestas = database.ref().child('articles').child('respuestas');
