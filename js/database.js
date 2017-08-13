@@ -18,3 +18,16 @@ refRespuestas.on('child_added', function(ss) {
     item.innerHTML = '<input name="respuesta" type="radio" value="' + respuesta.valor + '"> ' + respuesta.respuesta;
     getId("lista").appendChild(item);
 });
+function writeDB(){
+    var articles = database.ref().child('articles').child('id');
+
+    articles.on('child_added', function(ss){
+    var article = ss.val();
+    var s = getId("titulo");
+    s.value = "new value";
+    if(article.titulo.toLowerCase() = s.value.toLowerCase()){
+        console.log("YA Existe esta entrada");
+    }
+    });
+};
+writeDB();
