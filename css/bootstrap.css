@@ -102,7 +102,7 @@ article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, s
     border-radius:10px;
 }
 .img-border{
-    border-radius:10px;
+    border-radius:10px 0px;
 }
 body {
   margin: 0;
