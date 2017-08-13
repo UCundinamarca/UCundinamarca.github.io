@@ -11,3 +11,5 @@ excerpt: Bears
 ## The Bear
 
 The bear is awesome!!!
+
+<script src="/js/functions.js"></script>
