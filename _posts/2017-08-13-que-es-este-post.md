@@ -10,7 +10,7 @@ Este post o articulo
 
 habla
 
-de&nbsp;
+de
 
 todo
 
