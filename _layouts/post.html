@@ -16,7 +16,8 @@ layout: default
                 {{ content }}    
             </p>  
             <script>
-                imagenResponsive = document.getElementsByTagName("img").classList.toggle("img-flex");
+                imagenResponsive = document.getElementsByTagName("img");
+                imagenResponsive.classList.toggle("img-flex");
                 console.log(imagenResponsive);
             </script>
         </div>
