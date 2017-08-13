@@ -16,9 +16,13 @@ layout: default
                 {{ content }}    
             </p>  
             <script>
-                imagenResponsive = document.getElementsByTagName("img");
-                imagenResponsive.classList.toggle("img-flex");
-                console.log(imagenResponsive);
+                $(document).ready(function(){
+            		    $("img").each(function(){
+                    	    $(this).classList.toggle("img-flex");
+                    	    console.log(imagenResponsive);
+                    	});
+                }); 
+                
             </script>
         </div>
     </div>
