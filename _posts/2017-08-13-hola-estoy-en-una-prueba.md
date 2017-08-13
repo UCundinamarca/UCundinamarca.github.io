@@ -6,8 +6,8 @@ excerpt: Bears
 ---
 
 
-![](/uploads/versions/563720-561536543919270-1905339664-n---x0-37-225-171-1000-759x---.jpg)
+&nbsp;
 
-## The Bear
+## ![](/uploads/versions/1380439-637627466280279-273985651-n---x----258-225x---.jpg)The Bear
 
 The bear is awesome!!!
