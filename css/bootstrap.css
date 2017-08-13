@@ -87,6 +87,7 @@ article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, s
 }
 .footer-main{
     background-color:#1f2126;
+    bottom: 0;
 }
 .full-view{
     background-image:url("/images/documents.jpeg");
@@ -112,7 +113,6 @@ body {
   color: #212529;
   background-color: #fff;
   overflow-x: hidden;
-  min-height:100vh;
 }
 
 [tabindex="-1"]:focus {
