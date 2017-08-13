@@ -2,7 +2,7 @@
 
 var database = firebase.database();
 
-var articles = database.ref().child('articles');
+var articles = database.ref().child('articles').child('id');
 
 articles.on('value', function(ss){
     var article = ss.val();
