@@ -15,7 +15,10 @@ layout: default
             <p id="contenido">
                 {{ content }}    
             </p>  
-            <script src="/js/functions.js"></script>
+            <script>
+                imagenResponsive = document.getElementsByTagName("img");
+                imagenResponsive.className += " img-flex img-border";
+            </script>
         </div>
     </div>
 </div>
