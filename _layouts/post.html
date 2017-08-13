@@ -3,10 +3,12 @@ layout: default
 ---
 <div class="container">
     <div class="row">
-        <h2 class="spacing">{{ page.title }}</h2>
-        <div class="blog-post spacing">
-            <small>{{ page.category }}<span class="date">{{ page.date | date: '%B %d, %Y' }}</span></small>
-            {{ content }}
+        <h2 class="text-center editable">{{ page.title }}</h2>
+        <div class="col-md-12 col-lg-12">
+            <p class="editable"><small>{{ page.category }}<span class="date">{{ page.date | date: '%B %d, %Y' }}</span></small></p>
+            <p class="editable">
+                {{ content }}    
+            </p>  
         </div>
     </div>
 </div>
