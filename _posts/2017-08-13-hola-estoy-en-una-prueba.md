@@ -6,7 +6,7 @@ excerpt: Bears
 ---
 
 
-![](/uploads/versions/bear2---x----1000-759x---.jpg)
+![](/uploads/versions/563720-561536543919270-1905339664-n---x0-37-225-171-1000-759x---.jpg)
 
 ## The Bear
 
