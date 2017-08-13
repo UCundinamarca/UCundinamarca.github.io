@@ -34,5 +34,5 @@ function mensajeFeedback(msg) {
     elem.style.display = 'none'
   }, 5000);
 }
-imagenResponsive = document.getElementsByTagName("img");
-imagenResponsive.className += " img-fluid";
+imagenResponsive = document.getElementsByTagName("h2");
+imagenResponsive.className += " display-2";
