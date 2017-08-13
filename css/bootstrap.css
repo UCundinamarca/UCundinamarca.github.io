@@ -70,7 +70,6 @@ html {
   -ms-text-size-adjust: 100%;
   -ms-overflow-style: scrollbar;
   -webkit-tap-highlight-color: transparent;
-  height:100vh;
 }
 
 *,
@@ -113,6 +112,7 @@ body {
   color: #212529;
   background-color: #fff;
   overflow-x: hidden;
+  height:100vh;
 }
 
 [tabindex="-1"]:focus {
