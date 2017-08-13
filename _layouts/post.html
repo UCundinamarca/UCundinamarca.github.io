@@ -3,9 +3,11 @@ layout: default
 ---
 <div class="container">
     <div class="row">
-        <h2 class="text-center editable">{{ page.title }}</h2>
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center editable">
+            <h2 class="editable">{{ page.title }}</h2>
+        </div>
         <div class="col-md-12 col-lg-12">
-            <p class="editable"><small>{{ page.category }}<span class="date">{{ page.date | date: '%B %d, %Y' }}</span></small></p>
+            <p class="editable"><small>{{ page.category }} <span class="date"> {{ page.date | date: '%B %d, %Y' }}</span></small></p>
             <p class="editable">
                 {{ content }}    
             </p>  
