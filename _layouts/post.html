@@ -16,9 +16,8 @@ layout: default
                 {{ content }}    
             </p>  
             <script>
-                imagenResponsive = document.getElementsByTagName("img");
+                imagenResponsive = document.getElementsByTagName("img").classList.add("img-flex");;
                 console.log(imagenResponsive);
-                imagenResponsive.className = "img-flex img-border";
             </script>
         </div>
     </div>
