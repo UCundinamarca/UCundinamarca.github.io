@@ -12,10 +12,10 @@ layout: default
     <div class="row justify-content-center">
         <div class="col-md-10 col-lg-10">
             <div class="col-md-6 col-lg-6">
-                <p><small id="categoria text-secondary">{{ page.category }}</small></p>
+                <p id="categoria text-secondary text-right lead">{{ page.category }}</p>
             </div>
             <div class="col-md-6 col-lg-6 text-right">
-                <p><span class="date text-right" id="fecha"><small> {{ page.date | date: '%B %d, %Y' }}</small></span></p>
+                <p class="date text-secondary text-right lead" id="fecha"> {{ page.date | date: '%B %d, %Y' }}</p>
             </div>
             <p id="contenido">
                 {{ content }}    
