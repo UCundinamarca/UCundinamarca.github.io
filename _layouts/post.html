@@ -9,14 +9,14 @@ layout: default
             <h2 id="titulo">{{ page.title }}</h2>
         </div>
     </div>
-    <div class="row justify-content-center">
-        <div class="col-md-10 col-lg-10">
-            <div class="col-md-5 col-lg-5 text-left">
+    <div class="col-md-5 col-lg-5 text-left">
                 <p id="categoria" class="text-secondary lead">{{ page.category }}</p>
             </div>
             <div class="col-md-5 col-lg-5 text-right">
                 <p class="date text-secondary text-right lead" id="fecha"> {{ page.date | date: '%B %d, %Y' }}</p>
             </div>
+    <div class="row justify-content-center">
+        <div class="col-md-10 col-lg-10">
             <p id="contenido">
                 {{ content }}    
             </p>  
