@@ -21,7 +21,7 @@ auth.onAuthStateChanged(function(user) {
   if (user) {
     getId('usericon').innerHTML = 'Salir';
   } else {
-    getId('usericon').innerHTML = 'Ingresar';
+    getId('usericon').innerHTML = '<i class="fa fa-user-circle-o" aria-hidden="true"></i> Ingresar';
   }
 });
 
