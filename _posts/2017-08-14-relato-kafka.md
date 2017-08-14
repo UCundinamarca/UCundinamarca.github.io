@@ -2,7 +2,7 @@
 layout: post
 title: Relato Kafka
 category: Relatos
-abstract:
+abstract
 ---
 
 
