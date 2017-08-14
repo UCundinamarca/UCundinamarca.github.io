@@ -24,3 +24,19 @@ ref.on('value', function(ss) {
   var encuesta = ss.val();
   getId('pregunta').innerHTML = encuesta.pregunta;
 });
+
+
+//escritura en una colección
+getId('agregar').addEventListener('click', function() {
+  var user = auth.currentUser;
+  if(!user) {
+    mensajeFeedback('Haz login para votar la encuesta');
+    return false;
+  }
+    
+    var articles = database.ref().child('articles').child('id');
+
+    articles.on('value', function(ss){
+        var articleitem = ss.val();)};
+        console.log(articleitem);
+});
