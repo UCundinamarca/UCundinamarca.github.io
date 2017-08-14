@@ -18,9 +18,9 @@ getId('usericon').addEventListener('click', function() {
 
 auth.onAuthStateChanged(function(user) {
   if (user) {
-    getId('usericon').value = 'Salir';
+    getId('usericon').innerHTML = 'Salir';
   } else {
-    getId('usericon').value = 'Ingresar';
+    getId('usericon').innerHTML = 'Ingresar';
   }
 });
 
