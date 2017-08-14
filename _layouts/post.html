@@ -11,7 +11,7 @@ layout: default
     </div>
     <div class="row justify-content-center">
         <div class="col-md-10 col-lg-10">
-            <p><small id="categoria">{{ page.category }} <span class="date text-right" id="fecha"> {{ page.date | date: '%B %d, %Y' }}</span></small></p>
+            <p><small id="categoria">{{ page.category }}</small> <span class="date text-right" id="fecha"><small> {{ page.date | date: '%B %d, %Y' }}</small></span></p>
             <p id="contenido">
                 {{ content }}    
             </p>  
