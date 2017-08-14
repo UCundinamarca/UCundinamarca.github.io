@@ -3,14 +3,7 @@ var auth = firebase.auth();
 
 //Login de usuarios
 getId('usericon').addEventListener('click', function() {
-  if(user){
-    auth.signOut()
-        .then(function() {
-            mensajeFeedback('Sesión cerrada');
-    });
-  }
-  else{
-      var provider = new firebase.auth.GoogleAuthProvider();
+  var provider = new firebase.auth.GoogleAuthProvider();
       auth.signInWithPopup(provider)
         .then(function(result) {
           var user = result.user;
@@ -19,8 +12,7 @@ getId('usericon').addEventListener('click', function() {
         }).catch(function(error) {
           var errorMessage = error.message;
           mensajeFeedback('Error de autenticación: ' + errorMessage);
-    });
-  }
+        });
   
 });
 
