@@ -4,9 +4,11 @@ title: Articulos
 ---
 <div class="container">
     <div class="row">
-        <br/>
-        <h2>Articulos</h2>
-        <br/>
+        <div class="col-md-12 col-lg-12">
+            <br/>
+            <h1 class="display-2">Articulos</h1>
+            <br/>
+        </div>
         <div class="col-md-10 col-lg-9">
             <div>
                 {% for post in site.posts %}
@@ -19,6 +21,7 @@ title: Articulos
                       </span>
                     </p>
                     {{ post.abstract }}
+                    <br/>
                   </div>
                 {% endfor %}
             </div>
