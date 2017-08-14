@@ -34,5 +34,16 @@ function mensajeFeedback(msg) {
     elem.style.display = 'none'
   }, 5000);
 }
-imagenResponsive = document.getElementsByTagName("h2");
-imagenResponsive.className += " display-2";
+var futuro = null;
+function mensajeFeedback(msg) {
+  if(futuro) {
+    clearTimeout(futuro);
+  }
+  var elem = getId('mensaje');
+  elem.style.top = (15 + window.scrollY) + 'px';
+  elem.innerHTML = msg;
+  elem.style.display = 'block';
+  futuro = setTimeout(function() {
+    elem.style.display = 'none'
+  }, 5000);
+}
